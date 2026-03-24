@@ -6,7 +6,7 @@ Terminal
 4. db.students.insertMany([{name: "Ram", age: 19, grade: "A"},{ name: "Sita", age:21, grade: "B"}, {name: "Shyam", age: 18, grade: "A"}])
 5. db.students.find().pretty()
 6. db.students.find({age: {$gt:20}}).pretty()
-7. dbstudents.find({grade: "A"})>pretty()
+7. db.students.find({grade: "A"}).pretty()
 8. db.students.find({name: "Ram"}).pretty()
 9. db.students.updateOne( {name: "Sita"},{$set: {grade: "C"}})
 10. db.students.updateMany({age: {$lt: 20}},{$set: {grade: "C"}})
