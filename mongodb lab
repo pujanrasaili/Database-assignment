@@ -1,0 +1,22 @@
+Terminal 
+
+1. show dbs 
+2. use test '''already on db test'''
+3. db.students.find().pretty()
+4. db.students.insertMany([{name: "Ram", age: 19, grade: "A"},{ name: "Sita", age:21, grade: "B"}, {name: "Shyam", age: 18, grade: "A"}])
+5. db.students.find().pretty()
+6. db.students.find({age: {$gt:20}}).pretty()
+7. dbstudents.find({grade: "A"})>pretty()
+8. db.students.find({name: "Ram"}).pretty()
+9. db.students.updateOne( {name: "Sita"},{$set: {grade: "C"}})
+10. db.students.updateMany({age: {$lt: 20}},{$set: {grade: "C"}})
+11. db.students.deleteOne({name: "Ram"})
+12. db.students.deleteMany({grade: "C"})
+13. db.students.countDocuments()
+14. db.students.countDocuments({grade: "B"})
+15. db.students.find().sort({age: 1}).pretty()
+16. db.students.find().sort({grade: -1 }).pretty()
+17. db.students.updateMany({},{$set: {city: "kathmandu"}})
+18. db.students.find().pretty()
+19. db.students.deleteMany({age:{$gt: 21}})
+20. db.students.deleteMany({age:{$gte: 18, $lte: 21}})
